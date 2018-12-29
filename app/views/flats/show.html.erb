@@ -1,0 +1,16 @@
+<div class="wrapper-grey padded">
+  <div class="container">
+    <h1><%= @flat["name"]%></h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="card">
+            <%= image_tag @flat["imageUrl"], alt: @flat["name"], class: "card" %>
+          <div class="card-description">
+            <h2>Price: <%= @flat["price"]%> <%= @flat["priceCurrency"] %></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+      <%= link_to 'All Flats', root_path %>
+  </div>
+</div>
